@@ -15,4 +15,3 @@ function onOpenModal(event){
   const instance = basicLightbox.create(`<img class="gallery__image" src="${currentItem.parentNode.href}"/>`);
   instance.show();
 }
- 
