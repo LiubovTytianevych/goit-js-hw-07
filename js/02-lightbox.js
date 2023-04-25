@@ -6,7 +6,7 @@ const galleryContainer = document.querySelector('.gallery');
 const galleryMarkup = createGalery(galleryItems);
 
 galleryContainer.insertAdjacentHTML("beforeend", galleryMarkup);
-galleryContainer.addEventListener("click", onOpenModal);
+
 
 function createGalery(galleryItems) {
   return galleryItems
@@ -20,8 +20,8 @@ function createGalery(galleryItems) {
   })
   .join('');
 }
-
-const modal = new SimpleLightbox(".gallery .gallery__link", {
-  captionsData: "alt",
+const lightbox = new SimpleLightbox('.gallery a', { 
+  captionsData: 'alt',
   captionDelay: 250,
-});
+ });
+
